@@ -20,9 +20,9 @@ void selection_sort(int *array, size_t size)
 		for (j = i + 1; j < size; j++)
 		{
 			if (array[j] < array[p])
-				pos = j;
+				p = j;
 		}
-		if (pos != i)
+		if (p != i)
 		{
 			a = array[i];
 			array[i] = array[p];
